@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8">
+        <title>Laba8</title>
+        <script src="script_arr.js"></script>
+        <script src="isLeap.js"></script>
+    </head>
+    <body>
+        <p>Масив: <span id="array"></span></p>
+        <p>Найбільше число: <span id="max"></span></p>
+        <p>Найменше число: <span id="min"></span></p>
+        <p>Сума додатних чисел: <span id="sumPos"></span></p>
+        <p>Добуток від'ємних чисел: <span id="prodNeg"></span></p>
+        <p>Кількість додатних чисел: <span id="numDod"></span></p>
+        <p>Кількість від'ємних чисел: <span id="numNeg"></span></p>
+        <script>
+            const arr = [43, 1, 4, -6, 9, -3, 34, -158, 3, 92, -15, 7];
+            const results = array(arr);
+            document.getElementById("array").textContent = arr;
+            document.getElementById("max").textContent = results.max;
+            document.getElementById("min").textContent = results.min;
+            document.getElementById("sumPos").textContent = results.sumPos;
+            document.getElementById("prodNeg").textContent = results.prodNeg;
+            document.getElementById("numDod").textContent = results.numPos;
+            document.getElementById("numNeg").textContent = results.numNeg;
+        </script>
+        <h1>Перевірка на високосність</h1>
+        <label for="input_year">Введіть рік: </label>
+        <input type="number" id="input_year" min="0">
+        <button onclick="leap()">Відправити</button>
+        <p><span id="result"></span></p>
+    </body>
+</html>
